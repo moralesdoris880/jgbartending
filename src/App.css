@@ -10,7 +10,105 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  height: 200vh;
+  height: 140vh;
+  height: 100%;
+}
+
+.number{
+  color: white;
+  font-family: "Old Standard TT";
+  position: relative;
+  font-size: 18px;
+}
+
+#breakline{
+  width: 1px;
+  height: 90%;
+  background-color: white;
+  position: relative;
+  top: 10%;
+}
+
+#call3{
+  width: 200px;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 50px;
+  width: 300px;
+}
+
+#call2{
+  width: 200px;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 50px;
+  width: 300px;
+}
+
+#call{
+  width: 200px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 300px;
+}
+
+.phonenumber{
+  text-decoration: none;
+  color: white;
+}
+
+.phonenumber:hover{
+  color: #66E1F5;
+}
+
+.material-symbols-outlined{
+  width: 50px;
+  height: 50px;
+  color: white;
+  position: relative;
+  top:5px;
+}
+
+#footerinfo{
+  width: 100%;
+}
+
+h7{
+  color: #66E1F5;
+  font-family: "Old Standard TT";
+  font-size: 24px;
+  padding: 10px;
+  padding-left: 0px;
+  position: relative;
+  top: 20px;
+  margin-left: 10%;
+}
+
+h6{
+    font-family: "Abril Fatface";
+    font-size: calc(2rem + 5vw);
+    font-weight: 400;
+    color: #66E1F5;
+    text-align: center;
+    text-shadow: 4px 0 15px #66E1F5;
+    margin-top: 40px;
+    margin-right:10%;
+    margin-left: 10%;
+    user-select: none; 
+    text-align: left;
+    padding: 10px;
+}
+
+#cocktail{
+  background-image: url(/public/Cocktail.png);
+  background-size: 100%;
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  transform: rotate(28deg);
+  left: 5%;
+  animation: drink 1.5s infinite alternate;
 }
 
 #borderEventList{
@@ -23,10 +121,24 @@
   border-width: 3px;
   box-shadow: 4px 0px 20px #66E1F5;
   position: relative;
-  margin-top: 15px;
-  top: 10%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  top: 20vh;
   left: 50%;
   transform: translate(-50%, -50%);
+  backdrop-filter: blur(5px);
+}
+
+@keyframes drink{
+  0%{
+    transform: rotate(23deg)
+  }
+  50%{
+    transform: rotate(28deg)
+  }
+  100%{
+    transform: rotate(23deg)
+  }
 }
 
 #andMoreText{
@@ -52,6 +164,7 @@
   font-family: "Old Standard TT";
   margin: 10px;
   margin-top: 20px;
+  margin-left: 5px;
   width: 330px;
   text-align: left;
   font-weight: bold;
@@ -67,21 +180,21 @@
 
 h5{
   color: #66E1F5;
-  font-family: "Fjalla One";
+  font-family: "Anton";
   text-align: center;
   text-shadow: 4px 0 15px #66E1F5;
   margin:0px;
   margin-top: 20px;
   user-select: none;
   font-size: calc(1rem + 1vw);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
   letter-spacing: 0.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 li{
   color: white;
-  list-style-type: '⟡';
+  list-style-type: '⟡ ';
   font-size: calc(1rem + 1vw);
 }
 
@@ -117,6 +230,16 @@ span:nth-child(4) {
   }
 }
 
+h4 a{
+  text-decoration: none;
+  color: white;
+}
+
+h4 a:hover{
+  color: #66E1F5;
+  text-shadow: 4px 0 15px #66E1F5;
+}
+
 h4{
   font-family: "Fjalla One";
   text-align: center;
@@ -137,15 +260,17 @@ h4{
 }
 
 h3{
-  font-family: "Old Standard TT";
+  font-family: "Abril Fatface";
   font-size: calc(2rem + 5vw);
   font-weight: 400;
   color: #66E1F5;
   text-align: center;
-  text-shadow: 4px 0 15px #66E1F5;
+  text-shadow: 3px 0 15px #66E1F5;
   margin:0px;
   margin-top: 20px;
+  margin-bottom: 20px;
   user-select: none; 
+  font-size: 72px;
 }
 
 h1{
@@ -156,9 +281,11 @@ h1{
   font-size: calc(3rem + 5vw);
   text-align: center;
   margin: 0;
+  margin-top: 10px;
   color: var(--color-primary);
   letter-spacing: 0.4rem;
   user-select: none; 
+  font-size:96px;
 }
 
 @keyframes flicker{  
@@ -191,10 +318,24 @@ h2{
 }
 
 footer{
-  position: absolute;
+  position: relative;
+  background-color: #00040F;
+  width: 100%;
+  height: 200px;
   bottom: 0;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  border-top-style: solid;
+  border-color: #66E1F5;
+  border-top-width: 3px;
 }
 
-p{
+#designcreds{
   color: white;
+  text-align: center;
+  font-family: "Old Standard TT";
+  background-color: #00040F;
+  font-size: 14px;
+  padding: 10px;
 }
