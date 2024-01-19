@@ -1,24 +1,37 @@
 import './App.css';
 import React from 'react';
 import Nav from './Nav.js';
+import { useState } from 'react';
 
 function App() {
 
   const drink = React.useRef(null)
+  const upward = React.useRef(null)
+  const [down,setDown]=useState(false)
 
-  const handleScroll = (ref) => {
+  const handleScrollDown = (ref) => {
     window.scrollTo({
       top: ref.offsetTop,
       left: 0,
       behavior: "smooth",
     });
+    setDown(!down)
+  };
+
+  const handleScrollUp = (ref) => {
+    window.scrollTo({
+      top: ref.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+    setDown(!down)
   };
 
   return (
     <div className="App" alt="Image by kjpargeter on Freepik">
       <Nav />
       <div id="cocktail"></div>
-      <h3>J&G</h3>
+      <h3 ref={upward}>J&G</h3>
       <h1>Mobile Bar</h1>
       <h2>Bartending Services</h2>
       <h4><a href="mailto:andradejc82@gmail.com">
@@ -46,7 +59,7 @@ function App() {
         </div>
         <p id="andMoreText">And More!!!</p>
       </div>
-      <div><span style={{left:'48%',fontSize:'48px'}} className="material-symbols-outlined" onClick={() => {handleScroll(drink.current)}}>expand_more</span></div>
+      <div>{down?<span style={{left:'48%',fontSize:'48px'}} className="material-symbols-outlined" onClick={() => {handleScrollUp(upward.current)}}>keyboard_arrow_up</span>:<span style={{left:'48%',fontSize:'48px'}} className="material-symbols-outlined" onClick={(e) => {handleScrollDown(drink.current)}}>expand_more</span>}</div>
       <footer ref={drink}>
         <h6>J&G</h6>
         <div id="breakline"></div>
