@@ -65,7 +65,7 @@ function App() {
         <div id="breakline"></div>
         <div id="footerinfo">
           <h7>Get in Touch</h7>
-          <div id="call" style={{}}><span className="material-symbols-outlined" style={{fontSize:'24px',marginLeft:'10px',width:'25px',height:'25px'}}>call</span><span className="number" href="tel:+19294189777"><a className='phonenumber'>929-418-9777</a></span></div>
+          <div id="call" style={{}}><span className="material-symbols-outlined" style={{fontSize:'24px',marginLeft:'10px',width:'25px',height:'25px'}}>call</span><span className="number"><a className='phonenumber' href="tel:+19294189777">929-418-9777</a></span></div>
           <div id="call2" style={{}}><span className="material-symbols-outlined" style={{fontSize:'24px',marginLeft:'10px',width:'25px',height:'25px'}}>call</span><span className="number"><a href="tel:+16465093905" className='phonenumber'>646-509-3905</a></span></div>
           <div id="call3" style={{}}><span class="material-symbols-outlined" style={{fontSize:'24px',marginLeft:'10px',width:'25px',height:'25px'}}>mail</span><span className="number">andradejc82@gmail.com</span></div>
         </div>
