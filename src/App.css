@@ -14,6 +14,232 @@
   height: 100%;
 }
 
+@media only screen and (max-width: 480px){
+  div.App{
+    background-repeat: space;
+    width: 100vw;
+  }
+  div#borderEventList{
+    width: 70%;
+    height: 45%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    top: 25%;
+  }
+  p#designcreds{
+    display: none;
+  }
+  div.App h7{
+    margin-left: 50px;
+    padding: 0;
+  }
+  div#call3{
+    font-size: 36px;
+    margin-top: 10px;
+    height: 20px;
+  }
+  div#call2{
+    font-size: 36px;
+    margin-top: 10px;
+    height: 20px;
+  }
+  div#call{
+    font-size: 36px;
+    margin-top: 10px;
+    height: 20px;
+  }
+  div.App h4{
+    padding: 10px;
+    margin: 20px;
+  }
+  div.App h5{
+    font-size: 36px;
+  }
+  div.App{
+    height: 100vh;
+    position: relative;
+  }
+  div.App h1{
+    font-size: 48px;
+    letter-spacing: 0;
+    margin-top: 25px;
+  }
+  div.App h3{
+    font-size: 56px;
+    letter-spacing: 0;
+    padding-top: 30px;
+    margin: 0;
+  }
+  div.App h2{
+    font-size: calc(1rem + 5vw);
+  }
+  div#cocktail{
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 120px;
+    left: 30px;
+  }
+  html,body{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+  div#eventList{
+    flex-direction: column;
+    margin-top: 25px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    width: 270px;
+  }
+  div.listColumn li{
+    margin-top: 0px;
+    width: 260px;
+    font-size: 26px;
+  }
+  div.listColumn{
+    width: 270px;
+  }
+  p#andMoreText{
+    left: 150px;
+    position: absolute;
+    font-size: 48px;
+    top: 350px;
+  }
+  div span.material-symbols-outlined{
+    display: none;
+  }
+  div footer{
+    margin: 0;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+  }
+  div.App footer h6{
+    font-size: 56px;
+    height: 80px;
+    margin: 10px;
+    width: 50%;
+    text-align: center;
+    padding-top: 40px;
+  }
+  div#footerinfo{
+    height: 130px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-width: 768px){
+  p#designcreds{
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+  }
+  div.App h7{
+    margin-left: 50px;
+    padding: 0;
+  }
+  div#call3{
+    font-size: 36px;
+    margin-top: 10px;
+    height: 20px;
+  }
+  div#call2{
+    font-size: 36px;
+    margin-top: 10px;
+    height: 20px;
+  }
+  div#call{
+    font-size: 36px;
+    margin-top: 10px;
+    height: 20px;
+  }
+  div.App h4{
+    padding: 10px;
+    margin: 20px;
+  }
+  div.App h5{
+    font-size: 36px;
+  }
+  div.App{
+    height: 100vh;
+    position: relative;
+  }
+  div.App h1{
+    font-size: 48px;
+    letter-spacing: 0;
+    margin-top: 25px;
+  }
+  div.App h3{
+    font-size: 56px;
+    letter-spacing: 0;
+    padding-top: 30px;
+    margin: 0;
+  }
+  div.App h2{
+    font-size: calc(1rem + 5vw);
+  }
+  div#cocktail{
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 150px;
+    left: 50px;
+  }
+  html,body{
+    overflow-x: hidden;
+    height: 100vh;
+  }
+  div#borderEventList{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    margin-top: 60px;
+  }
+  div#eventList{
+    flex-direction: column;
+    margin-top: 25px;
+    padding-left: 10px;
+    width: 270px;
+  }
+  div.listColumn li{
+    margin-top: 0px;
+    width: 260px;
+    font-size: 26px;
+  }
+  div.listColumn{
+    width: 270px;
+  }
+  p#andMoreText{
+    left: 220px;
+    bottom: 52%;
+    font-size: 62px;
+  }
+  div span.material-symbols-outlined{
+    display: none;
+  }
+  div footer{
+    margin: 0;
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    bottom: 34px;
+  }
+  div.App footer h6{
+    font-size: 56px;
+    height: 80px;
+    margin: 10px;
+    width: 50%;
+    text-align: center;
+    padding-top: 40px;
+  }
+  div#footerinfo{
+    height: 130px;
+  }
+}
+
 .number{
   color: white;
   font-family: "Old Standard TT";
@@ -336,6 +562,6 @@ footer{
   text-align: center;
   font-family: "Old Standard TT";
   background-color: #00040F;
-  font-size: 14px;
+  font-size: 12px;
   padding: 10px;
 }
