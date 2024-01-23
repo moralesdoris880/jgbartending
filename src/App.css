@@ -130,6 +130,132 @@
   }
 }
 
+@media only screen and (max-height: 740px){
+  div.App{
+    background-repeat: space;
+    width: 100vw;
+  }
+  div#borderEventList{
+    width: 60%;
+    height: 45%;
+    position: relative;
+    margin-bottom: 10px;
+    top: 22%;
+  }
+  p#designcreds{
+    display: none;
+  }
+  div.App h7{
+    margin-left: 10px;
+    padding: 0;
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+    width: 100%;
+  }
+  div#call3{
+    font-size: 14px;
+    margin-top: 10px;
+    height: 20px;
+    width: 100%;
+    margin-left: 10px;
+  }
+  div#call2{
+    font-size: 14px;
+    margin-top: 10px;
+    height: 20px;
+    width: 100%;
+    margin-left: 10px;
+  }
+  div#call{
+    font-size: 14px;
+    margin-top: 20px;
+    height: 20px;
+    width: 100%;
+    margin-left: 10px;
+  }
+  div.App h4{
+    padding: 10px;
+    margin: 5px;
+  }
+  div.App h5{
+    font-size: 24px;
+  }
+  div.App{
+    height: 100vh;
+    position: relative;
+  }
+  div.App h1{
+    font-size: 38px;
+    letter-spacing: 0;
+    margin-top: 15px;
+  }
+  div.App h3{
+    font-size: 36px;
+    letter-spacing: 0;
+    padding-top: 20px;
+    margin: 0;
+  }
+  div.App h2{
+    font-size: calc(1rem + 2vw);
+  }
+  div#cocktail{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+  }
+  html,body{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+  div#eventList{
+    flex-direction: column;
+    margin-top: 25px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    width: 270px;
+  }
+  div.listColumn li{
+    margin-top: 0px;
+    width: 260px;
+    font-size: 20px;
+  }
+  div.listColumn{
+    width: 270px;
+  }
+  p#andMoreText{
+    left: 100px;
+    position: absolute;
+    font-size: 38px;
+    top: 300px;
+  }
+  div span.material-symbols-outlined{
+    display: none;
+  }
+  div footer{
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 10px;
+    margin-top: 50px;
+  }
+  div.App footer h6{
+    font-size: 36px;
+    height: 90px;
+    margin: 10px;
+    width: 50%;
+    text-align: center;
+  }
+  div#footerinfo{
+    height: 100px;
+    width: 60%;
+  }
+}
+
 @media only screen and (min-device-width: 481px) and (max-width: 768px){
   p#designcreds{
     position: fixed;
